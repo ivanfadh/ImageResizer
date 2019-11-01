@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/image_result"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/insert"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_margin="10dp"
+            tools:text="This is original size"
+            android:id="@+id/tvOriginal_size"
+            android:textSize="16sp"
+            android:layout_below="@id/image_result"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_margin="10dp"
+            tools:text="This is original scale"
+            android:id="@+id/tvOriginal_scale"
+            android:textSize="16sp"
+            android:layout_below="@id/tvOriginal_size"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/button_take"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="Take"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/tvOriginal_scale"
+            tools:layout_editor_absoluteX="155dp"
+            tools:layout_editor_absoluteY="382dp" />
+
+        <ImageView
+            android:layout_margin="20dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/image_resize"
+            android:layout_below="@id/button_take"
+            android:layout_width="150dp"
+            android:layout_height="150dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_margin="10dp"
+            tools:text="This is resize size"
+            android:id="@+id/tvResize_size"
+            android:textSize="16sp"
+            android:layout_below="@id/image_resize"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_margin="10dp"
+            tools:text="This is resize scale"
+            android:id="@+id/tvResize_scale"
+            android:textSize="16sp"
+            android:layout_below="@id/tvResize_size"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</ScrollView>
